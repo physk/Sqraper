@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# shellcheck disable=SC2086
+# shellcheck shell=bash
+
+umask 022
+tor_command="tor"
+echo "-> Starting tor <-"
+exec s6-setuidgid tor $tor_command

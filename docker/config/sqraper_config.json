@@ -1,0 +1,29 @@
+{
+  "qTrips":[
+    "!!mG7VJxZNCI",
+    "!!Hs1Jq13jV6"
+  ],
+  "bogusTrips":[],
+  "boards":[
+    "projectdcomms",
+    "qresearch"
+  ],
+  "domain8Kun":"8kun.top",
+  "domain8KunForLinks":"8kun.net",
+  "useLoki":false,
+  "lokiKun":"http://pijdty5otm38tdex6kkh51dkbkegf31dqgryryz3s3tys8wdegxo.loki",
+  "useTor":true,
+  "torKun":"http://www.jthnx5wyvjvzsxtu.onion",
+  "saveRemoteFilesToLocal":true,
+  "readFromLocal8KunFiles":false,
+  "sleepBetweenNewQPostChecks":150,
+  "offPeakSleepBetweenNewQPostChecks":300,
+  "maxDownloadAttempts":10,
+  "pauseBetweenDownloadAttempts":1,
+  "productionPostsJSONFilename":"posts.json",
+  "productionJSONFolder":"/var/www/json/",
+  "productionMediaFolder":"/var/www/media/",
+  "productionMediaURL":"https://%%yourdomain%%/media/",
+  "ftpServers":[],
+  "useColors":false
+}

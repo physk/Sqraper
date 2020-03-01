@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# shellcheck disable=SC2086
+# shellcheck shell=bash
+
+umask 022
+nginx_command="nginx"
+echo "-> Starting nginx <-"
+exec s6-setuidgid abc $nginx_command

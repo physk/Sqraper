@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+echo "-> Setting Permissions <-"
+
+chown -R abc:abc \
+    /run
+chown -R abc:abc \
+    /var/lib/nginx
+chown -R abc:abc \
+    /var/tmp/nginx
+chown -R abc:abc \
+    /var/log/nginx
+chown -R abc:abc \
+    /var/www

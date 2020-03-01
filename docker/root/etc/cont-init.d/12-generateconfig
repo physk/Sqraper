@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+echo "-> Generating Config <-"
+
+PRODUCTION_MEDIA_URL=${PRODUCTION_MEDIA_URL:-yourdomain.com}
+
+sed -i "s#\%\%yourdomain\%\%#${PRODUCTION_MEDIA_URL}#g" /app/sqraper_config.json
+
+echo "
+Sqraper ENV vars
+--------------------------------------------------------------------------
+productionMediaURL            https://${PRODUCTION_MEDIA_URL}/media/
+--------------------------------------------------------------------------
+"
